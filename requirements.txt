@@ -1,0 +1,14 @@
+fastapi==0.68.1
+SQLAlchemy==1.4.23
+uvicorn==0.15.0
+python-dotenv==0.19.1
+uvloop==0.16.0
+psycopg2-binary==2.9.1
+asyncpg==0.24.0
+GeoAlchemy2==0.9.4
+Shapely==1.8.0
+PyJWT==2.3.0
+passlib==1.7.4
+bcrypt==3.2.0
+cachecall==0.1.0
+httpx==0.23.0
