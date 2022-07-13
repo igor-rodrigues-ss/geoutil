@@ -4,10 +4,12 @@ from src.vector.urls import router as router_vector
 from src.external.urls import router as router_external
 
 from src.external.helper.client import client
-
+from src.middlewares.catcher import catcher
 
 app = FastAPI()
 
+
+app.middleware("http")(catcher)
 
 app.include_router(router_external, prefix="/external", tags=["External"])
 app.include_router(router_vector, prefix="/vector", tags=["Vector"])
